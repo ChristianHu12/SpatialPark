@@ -1,0 +1,9 @@
+# List of installed package
+# SpatialPark Project Dependencies (Python 3.12)
+numpy>=1.26.0
+opencv-python>=4.8.0
+pygame>=2.5.0
+ultralytics>=8.0.0
+matplotlib>=3.8.0
+# Note: CARLA wheel is installed locally via .whl file path, but listed for reference:
+# carla==0.9.16

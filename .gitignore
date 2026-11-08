@@ -1,0 +1,11 @@
+# Ignore Python virtual environments
+.venv/
+carla_env_312/
+
+# Ignore python cache and logs
+__pycache__/
+*.pyc
+*.log
+
+# VS Code specific local settings
+.vscode/
