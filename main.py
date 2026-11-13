@@ -34,8 +34,8 @@ def main():
         camera_bp.set_attribute('image_size_y', '720')
         camera_bp.set_attribute('fov', '90')
         
-        # Position camera at the front windshield/dashboard view
-        camera_transform = carla.Transform(carla.Location(x=1.5, z=1.4))
+        # Position camera at the rear update (the earlier was just for example)
+        camera_transform = carla.Transform(carla.Location(x=2.0,z=1.2), carla.Rotation(yaw=180))
         camera = world.spawn_actor(camera_bp, camera_transform, attach_to=vehicle)
 
         # 4. Define the live data callback function (Where your YOLOv8 / CV model will go)
