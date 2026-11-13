@@ -20,7 +20,7 @@ class VisionProcess:
         image_reshape =  image_array.reshape((self.height,self.width,4))
 
         # This slice keeps the row and columns but only the first 3 (Blue, green, yellow) for video feeds
-        bgr_frame = image_reshape[: , : , 3]
+        bgr_frame = image_reshape[: , : , :3].copy()
 
         return bgr_frame
 
